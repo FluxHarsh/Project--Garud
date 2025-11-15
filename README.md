@@ -7,6 +7,8 @@ The goal was to design and build a clean, multi-section website using **HTML, CS
 
 ---
 
+Live Hosted Link -- https://project-garud.vercel.app/
+
 ## 🚀 Features
 
 ### ✔ Landing Page (Hero)
