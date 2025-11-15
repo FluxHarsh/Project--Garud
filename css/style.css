@@ -1,0 +1,443 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 10px 5%;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+
+  display: block;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.615);
+
+}
+
+/* .nav .logo{
+
+} */
+
+.nav .lists {
+  list-style: none;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  gap: 6vw;
+  margin-right: 10vw;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.hero1 {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+
+}
+
+.hero1 text {
+  font-size: 38px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: 600;
+}
+
+.hero1 p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.hero1 .btn {
+  border: 2px solid rgba(255, 255, 255, 0.507);
+  padding: 10px 28px;
+  border-radius: 40px;
+}
+
+.hero1 .btn::after {
+  content: "›";
+  font-size: 22px;
+  opacity: 0.9;
+  margin-left: 15px;
+  color: white;
+}
+
+.hero1 .btn:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+
+}
+
+.hero1 a {
+  color: white;
+}
+
+.bg {
+  background-image: linear-gradient(to top, #1d2d3c 0%, #3f5268 100%);
+}
+
+/* About us sectionnn  hai */
+
+.about {
+  padding: 1px 5%;
+  color: #0f0f0f;
+  height: 78vh;
+  width: 100%;
+}
+
+.about1 {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25%;
+  padding-top: 80px;
+}
+
+.about-img img {
+  width: 400%;
+  /* padding-top: 20px; */
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: #000000;
+  transition: transform 0.4s ease;
+}
+
+.about-img img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.about-textpart h2 {
+  margin-top: -15px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #e9e9e9;
+}
+
+
+.about-textpart p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #e3e3e3;
+  margin-bottom: 20px;
+}
+
+.about-textpart .a {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #1985ff;
+}
+
+.about-textpart .a:hover {
+  text-decoration: underline;
+}
+
+
+/* Projects section */
+
+.projects {
+
+  padding: 1px 6%;
+  color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130vh;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 90vw;
+
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.994);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.card img {
+
+  height: 300px;
+  object-fit: cover;
+
+}
+
+
+.card h3 {
+  padding: 10px;
+  color: rgb(26, 26, 26);
+}
+
+.card ul {
+  translate: -5%;
+  color: rgb(58, 57, 57);
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  transform: scale(1.05);
+}
+
+
+/* Achievements section hai  */
+
+.achievement {
+  padding: 60px 6%;
+
+  color: #e3e3e3;
+  width: 100%;
+  height: 80vh;
+}
+
+.container {
+  padding-top: 20vh;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+  align-items: start;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-cont h2 {
+  font-size: 36px;
+  margin: 0 0 8px;
+  color: #fff;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-cont ul {
+  line-height: 1.75;
+
+  list-style: square;
+  gap: 20px;
+  padding: 0;
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.897);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left-cont a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* right wali photoss */
+.right-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding-right: 20px;
+}
+
+.right-cont img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.4s ease;
+
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+
+.right-cont img:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  transform: scale(1.05);
+}
+
+
+
+
+/* teams */
+
+
+
+
+
+.team {
+  /* background-image: linear-gradient(to top, #1d2d3c 0%, #3f5268 100%); */
+  /* background-image: linear-gradient(to top, #1d2d3c 0%, #3f5268 100%); */
+  padding: 0px 6%;
+  color: rgb(236, 236, 236);
+  width: 100%;
+  height: 150vh;
+}
+
+.team h2 {
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.teamcards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 90vw;
+
+}
+
+.teamcard {
+  background: rgba(255, 255, 255, 0.994);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+
+.teamcard img {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: cover;
+
+}
+
+
+.teamcard a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(26, 26, 26);
+}
+
+.teamcard a:hover {
+  font-size: 20.3px;
+  text-decoration: underline;
+}
+
+.teamcard p {
+  translate: 3%;
+  color: rgb(11, 11, 11);
+}
+
+.teamcard:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+  transform: scale(1.05);
+}
+
+
+/* Contact section khatam */
+.contact-section {
+  padding: 70px 6%;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  height: 50vh;
+  padding-bottom: 20vh;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.contact-subtext {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #131313;
+}
+
+.contact-details p {
+  color: #000;
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+.contact-details a {
+  color: #1a8cff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.small-note {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #393939;
+}
+
+/* footer section */
+.footer {
+  background: #15222e;
+  padding: 30px 0;
+  text-align: center;
+  color: #d3d3d3;
+  margin-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.footer p a {
+  text-decoration: none;
+  color: #1a8cff;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
